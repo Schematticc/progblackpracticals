@@ -3,72 +3,51 @@ font-family: neusharp;
 src:url("neusharp/Neusharp-Bold.otf");
 }
 
+* {
+  outline: 1px solid red !important;
+}
+
+
 html {
 font-family: neusharp;
-font-size: 15px;
+font-size: 1.4vw;
 color:white;
 align-items: center;
 }
 
 h2 {
-font-size: 2rem;
+font-size: 2vw;
 color: red;
+max-width: 100%;
 }
 
-ul,ol,dl,p {
-font-size: 1.5rem;
-}
-
-li, p {
+p {
 line-height: 1.0;
 }
 
-/* Unordered list styles */
-
-ul {
-padding-left: 2rem;
-list-style-type: circle;
-}
-
-ul li {
-padding-left: 2rem;
-background-image: url(star.svg);
-background-position: 0 0;
-background-size: 1.6rem 1.6rem;
-background-repeat: no-repeat;
-}
-
-/* Ordered list styles */
-
 ol {
 float:left;
-padding-left: 8rem;
+padding-left: 6vw;
 list-style-type: decimal;
-text-align: left;
-}
-
-/* Description list styles */
-
-dd, dt {
-line-height: 1.5;
-}
-
-dt {
-font-weight: bold;
+width: 18vw;
+height: 16vw;
 }
 
 img {
-margin-left: 50px;
+margin-left: 4vw;
 }
 
 table {
 table-layout: fixed;
-margin: 10px 50px;
+margin: 1vw 4vw;
 border-collapse: collapse;
 border-top: 1px solid white;
 border-bottom: 1px solid white;
 border-left: 1px solid white;
 border-right: 1px solid white;
+width: 30vw;
+height: 100vw;
+max-width: 100%;
 }
 
 thead {
@@ -77,19 +56,24 @@ border-bottom: 1px solid white;
 
 th, td {
 padding: 0.6em;
+font-size: 1vw
 }
 
 td {
 text-align: center;
 }
 
+figcaption {
+    font-size: 1vw;
+}
+
 .logoimg {
-padding: 10px;
+padding: 1vw;
 float: left;
 }
 
 .center {
 margin: auto;
 width: 50%;
-padding: 10px;
+padding: 5%;
 }
