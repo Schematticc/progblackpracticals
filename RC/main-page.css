@@ -1,0 +1,95 @@
+@font-face{
+font-family: neusharp;
+src:url("neusharp/Neusharp-Bold.otf");
+}
+
+html {
+font-family: neusharp;
+font-size: 15px;
+color:white;
+align-items: center;
+}
+
+h2 {
+font-size: 2rem;
+color: red;
+}
+
+ul,ol,dl,p {
+font-size: 1.5rem;
+}
+
+li, p {
+line-height: 1.0;
+}
+
+/* Unordered list styles */
+
+ul {
+padding-left: 2rem;
+list-style-type: circle;
+}
+
+ul li {
+padding-left: 2rem;
+background-image: url(star.svg);
+background-position: 0 0;
+background-size: 1.6rem 1.6rem;
+background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+float:left;
+padding-left: 8rem;
+list-style-type: decimal;
+text-align: left;
+}
+
+/* Description list styles */
+
+dd, dt {
+line-height: 1.5;
+}
+
+dt {
+font-weight: bold;
+}
+
+img {
+margin-left: 50px;
+}
+
+table {
+table-layout: fixed;
+margin: 10px 50px;
+border-collapse: collapse;
+border-top: 1px solid white;
+border-bottom: 1px solid white;
+border-left: 1px solid white;
+border-right: 1px solid white;
+}
+
+thead {
+border-bottom: 1px solid white;
+}
+
+th, td {
+padding: 0.6em;
+}
+
+td {
+text-align: center;
+}
+
+.logoimg {
+padding: 10px;
+float: left;
+}
+
+.center {
+margin: auto;
+width: 50%;
+padding: 10px;
+}
