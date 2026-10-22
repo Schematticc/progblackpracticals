@@ -3,17 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Styling lists</title>
+    <title>Formula 1 Statistics</title>
     <style>
       /* General styles */
 
+      @font-face{
+        font-family: neusharp;
+        src:url("neusharp/Neusharp-Bold.otf");
+      }
+
       html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-family: neusharp;
+        font-size: 15px;
+        color:white;
+        align-items: center;
       }
 
       h2 {
         font-size: 2rem;
+        color: red;
       }
 
       ul,ol,dl,p {
@@ -21,14 +29,14 @@
       }
 
       li, p {
-        line-height: 1.5;
+        line-height: 1.0;
       }
 
       /* Unordered list styles */
 
       ul {
         padding-left: 2rem;
-        list-style-type: none;
+        list-style-type: circle;
       }
 
       ul li {
@@ -42,7 +50,10 @@
       /* Ordered list styles */
 
       ol {
-        list-style-type: upper-roman;
+        float:left;
+        padding-left: 8rem;
+        list-style-type: decimal;
+        text-align: left;
       }
 
       /* Description list styles */
@@ -55,46 +66,259 @@
         font-weight: bold;
       }
 
+      img {
+        margin-left: 50px;
+      }
+
+      table {
+        table-layout: fixed;
+        margin: 10px 50px;
+        border-collapse: collapse;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+      }
+
+      thead {
+        border-bottom: 1px solid white;
+      }
+
+      th, td {
+        padding: 0.6em;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      .logoimg {
+        padding: 10px;
+        float: left;
+      }
+
+      .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+
     </style>
   </head>
-  <body>
-    <h2>Shopping (unordered) list</h2>
+  <body style="background-color: black">
+    <div class="center">
+      <img class ="logoimg"
+      width="92"
+      height="51"
+      src="Images/f1.png"
+      alt="F1"/>
+      <h1>Statistics:</h1>
 
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+      <p><a href="https://www.formula1.com/en/racing/2026">Schedule</a> for upcoming races</p>
 
-    <ul>
-      <li>Humous</li>
-      <li>Pitta</li>
-      <li>Green salad</li>
-      <li>Halloumi</li>
-    </ul>
+      <h2>Most Championships:</h2>
 
-    <h2>Recipe (ordered) list</h2>
+      <p>All drivers with 3 or more championships</p>
 
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+      <ol>
+        <li>Lewis Hamilton - 7</li>
+        <li>Michael Schumacher - 7</li>
+        <li>Juan Manuel Fangio - 5</li>
+        <li>Max Verstappen - 4</li>
+        <li>Alain Prost - 4</li>
+        <li>Sebastian Vettel - 4</li>
+        <li>Ayrton Senna - 3</li>
+        <li>Nikki Lauda - 3</li>
+        <li>Jack Brabham - 3</li>
+        <li>Jackie Stewart - 3</li>
+        <li>Nelson Piquet - 3</li>
+      </ol>
 
-    <ol start="4">
-      <li>Toast pitta, leave to cool, then slice down the edge.</li>
-      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
-      <li>Wash and chop the salad.</li>
-      <li>Fill pitta with salad, humous, and fried halloumi.</li>
-    </ol>
+      <figure>
+        <img width="150"
+        length="237"   
+        src="Images/hamilton.png"
+        alt="Lewis Hamilton"/>
+        <figcaption>7 time World Champion Lewis Hamilton</figcaption>
+      </figure>
+      
+      <h2>Current Drivers Standings:</h2>
 
-    <h2>Ingredient description list</h2>
-
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
-
-    <dl>
-      <dt>Humous</dt>
-      <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
-      <dt>Pitta</dt>
-      <dd>A soft, slightly leavened flatbread.</dd>
-      <dt>Halloumi</dt>
-      <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
-      <dt>Green salad</dt>
-      <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
-    </dl>
-
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Driver</th>
+            <th scope="col">Team</th>
+            <th scope="col">Points</th>
+            <th scope="col">Wins</th>
+            <th scope="col">Podiums</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Kimi Antonelli</th>
+            <td>Mercedes</td>
+            <td>340</td>
+            <td>8</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <th scope="row">George Russell</th>
+            <td>Mercedes</td>
+            <td>238</td>
+            <td>3</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th scope="row">Lewis Hamilton</th>
+            <td>Ferrari</td>
+            <td>229</td>
+            <td>1</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">Max Verstappen</th>
+            <td>Red Bull</td>
+            <td>221</td>
+            <td>2</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th scope="row">Charles Leclerc</th>
+            <td>Ferrari</td>
+            <td>215</td>
+            <td>1</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row">Lando Norris</th>
+            <td>Mclaren</td>
+            <td>201</td>
+            <td>2</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row">Oscar Piastri</th>
+            <td>Mclaren</td>
+            <td>138</td>
+            <td>0</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">Isack Hadjar</th>
+            <td>Red Bull</td>
+            <td>97</td>
+            <td>0</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">Liam Lawson</th>
+            <td>Racing Bulls</td>
+            <td>75</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Pierre Gasly</th>
+            <td>Alpine</td>
+            <td>41</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Arvid Lindblad</th>
+            <td>Racing Bulls</td>
+            <td>38</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Franco Colapinto</th>
+            <td>Alpine</td>
+            <td>27</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Oliver Bearman</th>
+            <td>Haas</td>
+            <td>23</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Nico Hülkenburg</th>
+            <td>Audi</td>
+            <td>13</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Gabriel Bortoleto</th>
+            <td>Audi</td>
+            <td>10</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Esteban Ocon</th>
+            <td>Haas</td>
+            <td>7</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Fernando Alonso</th>
+            <td>Aston Martin</td>
+            <td>7</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Carlos Sainz Jr.</th>
+            <td>Williams</td>
+            <td>7</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Alexander Albon</th>
+            <td>Williams</td>
+            <td>5</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Yuki Tsunoda</th>
+            <td>Racing Bulls</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Lance Stroll</th>
+            <td>Aston Martin</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Valtteri Bottas</th>
+            <td>Cadillac</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Sergio Pérez</th>
+            <td>Cadillac</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   </body>
 </html>
