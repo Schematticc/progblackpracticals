@@ -11,5 +11,6 @@ textarea {
 .center {
     margin: auto;
     width: 50%;
-    padding: 2%
+    padding: 2%;
+    text-align: center;
 }
